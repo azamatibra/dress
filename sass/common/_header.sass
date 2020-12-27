@@ -1,6 +1,10 @@
 .header
-  +media_es
-    height: 100vh
+  margin-bottom: rem(250px)
+  +media_md
+    margin-bottom: rem(150px)
+  +media_sm
+    margin-bottom: rem(250px)
+    height: 91vh
   &__container
     padding: rem(57px) 0 rem(27px) 0
     +flex(center, null)
@@ -33,7 +37,9 @@
     padding: rem(100px) 0
     position: relative
     z-index: 2
-    +media_es
+    +media_sm
+      height: 100vh
+      padding: 0
       +flex(center, center)
       flex-direction: column
   &__title
@@ -47,8 +53,9 @@
       font-size: rem(55px)
     +media_md
       font-size: rem(48px)
-    +media_es
+    +media_sm
       text-align: center
+    +media_es
       font-size: rem(36px)
       margin-bottom: rem(50px)
   &__btn
