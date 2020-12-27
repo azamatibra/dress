@@ -1,0 +1,65 @@
+.about
+  position: relative
+  min-height: 700px
+  background: url(../img/us_bg.jpg) no-repeat 0 0 / cover
+  overflow: hidden
+  +media_el
+    min-height: 800px
+  +media_md
+    min-height: 430px
+  +media_sm
+    min-height: 500px
+  +media_es
+    min-height: 1000px
+    padding: rem(200px) 0
+  +media_em
+    padding: 0
+    min-height: 700px
+  &__wrap
+    padding: rem(100px)
+    position: absolute
+    width: 50%
+    height: 100%
+    left: 50%
+    background: rgba(0, 0, 0, 0.7)
+    backdrop-filter: blur(20px)
+    +media_lg
+      padding: rem(60px)
+    +media_md
+      width: 100%
+      left: 0
+      padding: rem(40px) rem(30px)
+    +media_es
+      height: 67%
+    +media_em
+      height: 100%
+  &__inner
+    max-width: 566px
+    +media_md
+      margin: 0 auto
+  &__title
+    margin-bottom: rem(40px)
+    +media_el
+      text-align: center
+  &__text
+    font-weight: 600
+    font-size: rem(18px)
+    color: $color-white
+    line-height: 1.7
+    text-align: right
+    margin-bottom: rem(60px)
+    +media_md
+      font-size: rem(15px)
+      text-align: center
+      margin-bottom: rem(40px)
+  &__register
+    +flex(center, center)
+    font-weight: 500
+    font-size: rem(18px)
+    color: $color-pink
+  &__arrow
+    margin-left: rem(5px)
+    width: 26px
+    height: 13px
+    fill: $color-pink
+    stroke: $color-pink
