@@ -1,3 +1,11 @@
+$(function () {
+  $(".header__btn").on("click", function (e) {
+    $("html,body")
+      .stop()
+      .animate({ scrollTop: $(".catalog").offset().top }, 1000);
+    e.preventDefault();
+  });
+});
 const swiper = new Swiper(".swiper-container", {
   navigation: {
     nextEl: ".catalog__button-next",
