@@ -1,0 +1,46 @@
+.footer
+  padding: rem(100px) 0
+  background-color: $color-black
+  color: $color-white
+  +media_sm
+    padding: rem(60px) 0
+  &__inner
+    max-width: 605px
+    margin: 0 auto
+    text-align: center
+    font-size: rem(18px)
+  &__title
+    font-family: $font-pacifico
+    font-size: rem(48px)
+    color: $color-pink
+    line-height: 1.3
+    margin-bottom: rem(35px)
+    +media_sm
+      font-size: rem(18px)
+  &__address
+    font-style: normal
+    margin-bottom: rem(20px)
+  &__email
+    display: inline-block
+    color: $color-white
+    margin-bottom: rem(30px)
+  &__group
+    +flex()
+    flex-direction: column
+    margin-bottom: rem(35px)
+  &__phone
+    color: $color-white
+    line-height: 1.3
+  &__social
+    &-link
+      margin-right: rem(15px)
+      &:last-child
+        margin-right: 0
+      &:hover
+        .footer__social-icon
+          transform: scale(1.3)
+
+    &-icon
+      transition: .2s
+      width: 40px
+      height: 40px

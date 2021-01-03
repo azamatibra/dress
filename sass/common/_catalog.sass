@@ -1,0 +1,75 @@
+.catalog
+  margin-bottom: rem(150px)
+  &__title
+    text-align: center
+    margin-bottom: rem(90px)
+    +media_es
+      margin-bottom: rem(30px)
+  &__container
+    padding: rem(50px) 0 !important
+    max-width: 1240px
+    margin: 0 auto
+    +media_es
+      padding: rem(50px) 0 rem(80px) 0 !important
+  &__wrapper
+    max-width: 1100px
+    margin: 0 auto
+  &__slide
+    box-shadow: 0px 5px 50px rgba(0, 0, 0, 0.2)
+    border-radius: 30px
+    max-width: 277px
+    &-photo
+      border-radius: 30px 30px 0 0
+    &-inner
+      text-align: center
+      padding: rem(35px) rem(45px) rem(75px) rem(45px)
+    &-title
+      font-size: rem(18px)
+      font-weight: 400
+      line-height: 1.2
+      margin-bottom: rem(25px)
+    &-price
+      display: inline-block
+      font-size: rem(18px)
+      margin-bottom: rem(32px)
+    &-more
+      +flex(center, center)
+      color: $color-pink
+    &-icon
+      margin-left: rem(5px)
+      width: 26px
+      height: 12px
+      stroke: $color-pink
+      fill: $color-pink
+  &__navigation
+    +flex(center, space-between)
+    position: absolute
+    width: 100%
+    top: 50%
+    transform: translateY(-50%)
+    z-index: 2
+    +media_el
+      padding: 0 rem(30px)
+    +media_md
+      padding: 0 rem(15px)
+    +media_es
+      max-width: 150px
+      top: 95%
+      left: 50%
+      transform: translateX(-50%)
+  &__button
+    cursor: pointer
+    &-icon
+      width: 24px
+      height: 24px
+    &-next
+      transform: rotate(180deg)
+      .catalog__button-icon
+        vertical-align: top
+
+.swiper
+  &-slide
+    +media_el
+      +flex(null, center)
+  &-pagination
+    display: none
