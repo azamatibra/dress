@@ -17,7 +17,6 @@
   },
   "homepage": "https://github.com/azamatibra/dress#readme",
   "devDependencies": {
-    "hamburgers": "^1.1.3",
     "swiper": "^6.4.5"
   }
 }

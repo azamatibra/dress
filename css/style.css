@@ -214,11 +214,8 @@ button {
 }
 .header__container {
   padding: 3.5625rem 0 1.6875rem 0;
-  display: flex;
-  align-items: center;
 }
 .header__logo {
-  flex: 2;
   text-align: center;
   font-family: "Pacifico", cursive;
   color: #FFAEAE;

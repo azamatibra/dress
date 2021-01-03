@@ -7,10 +7,11 @@ html(lang="en")
     link(rel="stylesheet" href="css/style.css")
     title Document
   body
-    include includes/header.pug
-    include includes/about.pug
-    include includes/galery.pug
-    include includes/catalog.pug
-    include includes/footer.pug
+    .wrapper
+      include includes/header.pug
+      include includes/about.pug
+      include includes/galery.pug
+      include includes/catalog.pug
+      include includes/footer.pug
     script(src="https://unpkg.com/swiper/swiper-bundle.min.js")
     script(src="js/main.js")
