@@ -341,6 +341,11 @@ button {
   overflow: hidden;
   grid-gap: 10px;
 }
+@media (max-width: 480px) {
+  .galery__wrap {
+    grid-gap: 5px;
+  }
+}
 @media (max-width: 576px) {
   .galery__img {
     min-height: 200px;
