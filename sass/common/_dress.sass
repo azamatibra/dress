@@ -1,0 +1,105 @@
+.dress
+  +flex(center, center)
+  overflow: hidden
+  height: 100vh
+  +media_custom($max-width)
+    align-items: stretch
+  +media_el
+    height: auto
+  +media_custom(850px)
+    flex-direction: column
+
+  &__box
+    +flex(center, null)
+    width: 55%
+    padding: rem(70px)
+    background: $accent-bg
+    +media_custom(850px)
+      width: auto
+    +media_es
+      padding: rem(50px)
+
+  &__img
+    margin-left: auto
+  &__info
+    width: 45%
+    background: #fff
+    padding: rem(100px) rem(90px) rem(100px) rem(75px)
+    +media_el
+      padding: rem(50px)
+    +media_custom(850px)
+      width: auto
+    +media_es
+      padding: rem(40px) rem(30px)
+    +media_em
+      padding-left: rem(15px)
+      padding-right: rem(15px)
+    
+  &__inner
+    max-width: 535px
+    +media_custom(850px)
+      max-width: 500px
+      text-align: center
+      margin: 0 auto
+  &__title
+    font-size: rem(24px)
+    line-height: 1.5
+    margin-bottom: rem(50px)
+    +media_es
+      margin-bottom: rem(40px)
+  &__text
+    max-width: 450px
+    font-size: rem(18px)
+    line-height: 1.5
+    margin-bottom: rem(50px)
+    +media_custom($max-width)
+      max-width: 100%
+  &__advanced
+    display: inline-block
+    font-size: rem(48px)
+    font-weight: bold
+    color: $color-pink
+    line-height: 1.5
+    margin-bottom: rem(40px)
+    +media_custom($max-width)
+      font-size: rem(30px)
+    +media_sm
+      margin-bottom: rem(55px)
+  &__contact
+    +flex(start, null)
+    +media_custom($max-width)
+      align-items: center
+      flex-direction: column
+    +media_custom(850px)
+      flex-direction: row
+      align-items: start
+      justify-content: center
+    +media_sm
+      flex-direction: column
+      align-items: center    
+  &__btn
+    background: rgba(0, 0, 0, 0.3)
+    backdrop-filter: blur(3px)
+    border-radius: 23px
+    padding: rem(12px) rem(47px)
+    font-weight: bold
+    font-size: rem(18px)
+    margin-right: rem(44px)
+    +media_custom($max-width)
+      width: 100%
+      margin-right: 0
+      margin-bottom: rem(25px)
+    +media_custom(850px)
+      width: auto
+      margin-right: rem(44px)
+    +media_sm
+      margin-right: 0
+      margin-bottom: rem(55px)
+.social
+  &__icon
+    width: 39px
+    height: 39px
+  &__link
+    margin-right: rem(27px)
+    &:last-child
+      margin-right: 0
